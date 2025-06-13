@@ -1,0 +1,26 @@
+# WhatsApp AI Calling System Environment Variables
+
+# Backend Server Configuration
+BACKEND_URL=http://localhost:3001
+
+# Twilio WhatsApp API Configuration
+# Get these from your Twilio Console: https://console.twilio.com/
+ACCOUNT_SID=AC1bb4f50dc1c8b78e970a8d11be78
+AUTH_TOKEN=92fe367a38b8f823a725011dbba24d86
+YOUR_WHATSAPP_NUMBER=60162667227
+
+# Public URL for webhooks (use ngrok for local development)
+PUBLIC_SERVER_URL=http://localhost:3001
+
+# Next.js Configuration
+NEXT_PUBLIC_BACKEND_URL=http://localhost:3001
+
+# MongoDB Configuration
+MONGODB_URI=mongodb://localhost:27017/whatsapp-ai-system
+
+# AI Provider Configurations
+OPENAI_API_KEY=your_openai_api_key_here
+GOOGLE_AI_API_KEY=your_google_ai_api_key_here
+
+# Default AI Provider (openai, google, or simulation)
+DEFAULT_AI_PROVIDER=simulation
