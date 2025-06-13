@@ -1,0 +1,18 @@
+ // --- CONFIGURATION ---
+    const PORT = process.env.PORT || 3000;
+    // --- Credentials from your WhatsApp Business API Provider (e.g., Twilio) ---
+    const ACCOUNT_SID = process.env.ACCOUNT_SID || 'ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+    const AUTH_TOKEN = process.env.AUTH_TOKEN || 'your_auth_token';
+    const YOUR_WHATSAPP_NUMBER = process.env.YOUR_WHATSAPP_NUMBER || '+14155238886'; // This is a Twilio sandbox number
+    const PUBLIC_SERVER_URL = process.env.PUBLIC_SERVER_URL || 'http://localhost:3000';
+
+    const app = express();
+    app.use(express.urlencoded({ extended: true }));
+    app.use(express.json());
+
+    const server = http.createServer(app);
+    const io = new Server(server);
+    const apiProvider = twilio(ACCOUNT_SID, AUTH_TOKEN);
+
+    let clientSocket = null;
+    let activeSession = null;
