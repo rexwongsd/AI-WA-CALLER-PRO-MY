@@ -1,0 +1,42 @@
+# WhatsApp AI Calling System - Todos
+
+## Project Setup
+- [x] Create Next.js project with TypeScript and Tailwind
+- [x] Install additional dependencies (socket.io, express, twilio)
+- [x] Set up backend server structure
+- [x] Configure environment variables
+
+## Frontend Development
+- [x] Create QR code login interface
+- [x] Build main dashboard with language selector
+- [x] Implement real-time chat interface
+- [x] Add WhatsApp contact management
+- [x] Integrate Socket.IO client
+
+## Backend Development
+- [x] Set up Express server with Socket.IO
+- [x] Implement Twilio WhatsApp integration
+- [x] Create webhook handlers for incoming messages
+- [x] Add session management
+- [x] Implement AI response simulation
+
+## Features
+- [x] Multi-language support (EN/CN/BM)
+- [x] Real-time message transcription
+- [x] Call timer functionality
+- [x] WhatsApp message sending
+- [x] WhatsApp call initiation
+- [x] Session status management
+
+## Testing & Deployment
+- [x] Test real-time functionality
+- [x] Add error handling
+- [x] Create deployment configuration
+- [x] Version and deploy
+
+## Advanced Features
+- [in_progress] Add voice message recording and playback functionality
+- [ ] Implement message history and conversation persistence
+- [ ] Add customer profile management with contact details
+- [ ] Integrate additional AI providers (OpenAI, Google AI)
+- [ ] Add analytics dashboard for call metrics and performance tracking
